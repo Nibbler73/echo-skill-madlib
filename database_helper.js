@@ -10,8 +10,8 @@ var localCredentials = {
   secretAccessKey: "fake"
 };
 var credentials = {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.DYNASTY_ACCESS_KEY_ID,
+    secretAccessKey: process.env.DYNASTY_SECRET_ACCESS_KEY,
     region: 'eu-west-1'
 };
 var localDynasty = require("dynasty")(localCredentials, localUrl);
