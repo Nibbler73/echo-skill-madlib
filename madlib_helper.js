@@ -109,8 +109,8 @@ function MadlibHelper(obj) {
         {
           value: null,
           template_key: "stadt_1",
-          prompt: "DeineStadt",
-          help: "Sag DeineStadt um ihn zum Satz hinzuzufügen. WelcheStadt möchtest Du?"
+          prompt: "Deine Stadt",
+          help: "Sag Deine Stadt um ihn zum Satz hinzuzufügen. Welche Stadt möchtest Du?"
         },
         {
           value: null,
