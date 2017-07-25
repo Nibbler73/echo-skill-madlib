@@ -65,7 +65,8 @@ function MadlibHelper(obj) {
               + " Als alles verstaut war, fuhren wir los. Wir trällerten gemeinsam lautstark \"${lied_1}\"."
               + " Ich guckte aus dem Fenster."
               + " Da huschte ${tier_mit_artikel} über die Straße, mitten in der zweiten Strophe."
-              + " Meine Mutter schrie: \"<emphasis>Guckt mal, ${tier_mit_artikel}!</emphasis>\"",
+              + " Meine Mutter schrie: \"<emphasis>Guckt mal, ${tier_mit_artikel}!</emphasis>\""
+              + " Als wir nach ${zahl_70_bis_900} Stunden Fahrt endlich in ${land_1} angekommen waren, wurde es ein echt toller Urlaub!",
       steps: [
         {
           value: null,
@@ -90,6 +91,12 @@ function MadlibHelper(obj) {
           template_key: "lied_1",
           prompt: "den Titel eines Liedes",
           help: "Sage den Namen eines Liedes für den Satz. Wessen Namen möchtest Du gerne verwenden?"
+        },
+        {
+          value: null,
+          template_key: "land_1",
+          prompt: "ein Land",
+          help: "Sage den Namen eines Landes für den Satz. Welches Land möchtest Du gerne verwenden?"
         }]
     },
     {
@@ -151,8 +158,46 @@ function MadlibHelper(obj) {
         {
           value: null,
           template_key: "orts_angabe_1",
-          prompt: "eine Ortsangabe (z.B. \"in der Küche\")",
+          prompt: "eine Ortsangabe (zum Beispiel <emphasis>in der Küche</emphasis>)",
           help: "Sage eine Ortsangabe für den Satz. Zum Beispiel im Flughafen, auf einer Insel, in Köln oder in der Küche. Welche Ortsangabe möchtest Du gerne verwenden?"
+        }]
+    },
+    {
+      title: "Der Weltraum",
+      template: "In einer weit entfernten Galaxis lebten die ${dein_name}anier auf dem Planeten ${getraenk}-Ricks, "
+      + " der zu ${zahl_2_bis_100} Prozent aus ${getraenk} besteht. "
+      + " Die ${dein_name}anier waren von Kopf bis zu ihren ${zahl_2_bis_100} Füßen ${farbe} und sie verbrachten die meiste Zeit "
+      + " ihres Lebens entweder ${getraenk} trinkend, darin schwimmend oder ${hobby}d.",
+      steps: [
+        {
+          value: null,
+          template_key: "dein_name",
+          prompt: "Deinen Namen",
+          help: "Sag Deinen Namen um ihn zum Satz hinzuzufügen. Welchen Namen möchtest Du?"
+        },
+        {
+          value: null,
+          template_key: "getraenk",
+          prompt: "ein Getränk",
+          help: "Sag ein Getränk um ihn zum Satz hinzuzufügen. Zum Beispiel: Orangensaft, Tee oder Wasser. Welches Getränk möchtest Du?"
+        },
+        {
+          value: null,
+          template_key: "zahl_2_bis_100",
+          prompt: "eine Zahl zwischen 2 und 100",
+          help: "Sage mir eine Zahl zwischen 2 und 100 um sie dem Satz hinzuzufügen. Welche Zahl zwischen 2 und 100 möchtest Du verwenden?"
+        },
+        {
+          value: null,
+          template_key: "farbe",
+          prompt: "eine Farbe",
+          help: "Sage mir eine Farbe um sie dem Satz hinzuzufügen. Zum Beispiel: Grün, Blau oder Rot. Welche Farbe möchtest Du verwenden?"
+        },
+        {
+          value: null,
+          template_key: "hobby",
+          prompt: "ein Hobby",
+          help: "Sag ein Hobby um es zum Satz hinzuzufügen. Zum Beispiel: Lesen, Fahrradfahren oder Singen. Welches Hobby möchtest Du?"
         }]
     }
   ];
