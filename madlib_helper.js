@@ -65,7 +65,7 @@ function MadlibHelper(obj) {
               + " Als alles verstaut war, fuhren wir los. Wir trällerten gemeinsam lautstark \"${lied_1}\"."
               + " Ich guckte aus dem Fenster."
               + " Da huschte ${tier_mit_artikel} über die Straße, mitten in der zweiten Strophe."
-              + " Meine Mutter schrie: \"Guckt mal, ${tier_mit_artikel}!\"",
+              + " Meine Mutter schrie: \"<emphasis>Guckt mal, ${tier_mit_artikel}!</emphasis>\"",
       steps: [
         {
           value: null,
@@ -97,7 +97,7 @@ function MadlibHelper(obj) {
       template: "Mit ${dein_name} ist ein großer und bedeutender Künstler nach ${stadt_1} gekommen."
       + " Das ${nomen_plural_1}museum zeigt erstmalig die Ausstellung \"${nomen_1}\" mit der ${dein_name} zu Anerkennung und Weltruhm gelangte."
       + " Das Außergewöhnliche der Werke von ${dein_name} ist der ${adjektiv_1}e Stil und die ${adjektiv_2}e Farbgebung der Bilder."
-      + " \"Mein Werk ${nomen_1} ${orts_angabe_1} ebnete den Weg für meine internationale Künstler-Karriere\", so ${dein_name} gegenüber unserer Zeitung. "
+      + " \"<emphasis>Mein Werk ${nomen_1} ${orts_angabe_1} ebnete den Weg für meine internationale Künstler-Karriere</emphasis>\", so ${dein_name} gegenüber unserer Zeitung. "
       + " Vergleiche mit ${kuenstler_1} und ${kuenstler_2} sind durchaus angebracht und keinesfalls übertrieben.",
       steps: [
         {
