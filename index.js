@@ -50,15 +50,15 @@ var madlibIntentFunction = function(madlibHelper, request, response) {
 };
 
 skillService.launch(function(request, response) {
-  var prompt = 'Willkommen zum verrückten Satz Spiel.' +
-    ' Um einen neuen Satz zu bauen, sage neuer Satz';		// neuer Satz
+  var prompt = 'Willkommen zum verrückten Satz.' +
+    ' Um einen neuen Satz zu bauen, sage neuer Satz.';		// neuer Satz
   response.say(prompt).shouldEndSession(false);
 });
 
 skillService.intent('AMAZON.HelpIntent', {},
   function(request, response) {
     var madlibHelper = getMadlibHelper(request);
-    var help = 'Willkommen zum verrückten Satz Spiel.' +
+    var help = 'Willkommen zum verrückten Satz.' +
       ' Um einen neuen Satz zu bauen, sage neuer Satz.' +
       ' Du kannst auch Stop oder Abbrechen sagen um mit dem Spiel aufzuhören.';
     if (madlibHelper.started) {
