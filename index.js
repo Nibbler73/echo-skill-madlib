@@ -44,7 +44,7 @@ var madlibIntentFunction = function(madlibHelper, request, response) {
     } else {
       madlibHelper.retryCount++;
     }
-    if(madlibHelper.retryCount>2) {
+    if(madlibHelper.retryCount>1) {
       response.say('<say-as interpret-as="interjection">ach du meine güte.</say-as> Wie es scheint bin ich gerade sehr schwerhörig, denn ich konnte Dich leider immer noch nicht verstehen. Falls Du noch Lust hast, versuche es bitte von vorne. <say-as interpret-as="interjection">tschö.</say-as>');
       response.shouldEndSession(true);
     } else {
