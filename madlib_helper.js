@@ -6,6 +6,7 @@ function MadlibHelper(obj) {
   this.started = false;
   this.madlibIndex = -1;
   this.currentStep = 0;
+  this.retryCount = 0;
   this.madlibs = [
     {
       title: "Ein kalter November Tag",
@@ -231,7 +232,6 @@ MadlibHelper.prototype.currentMadlib = function() {
   if(this.madlibIndex < 0) {
     this.madlibIndex = Math.floor( Math.random() * this.madlibs.length );
   }
-  console.log('this.madlibIndex: ' + this.madlibIndex);
   return this.madlibs[this.madlibIndex];
 };
 
