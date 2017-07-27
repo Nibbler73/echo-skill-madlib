@@ -17,7 +17,7 @@ var getMadlibHelper = function(madlibHelperData) {
   return new MadlibHelper(madlibHelperData);
 };
 var cancelIntentFunction = function(req, res) {
-  res.say('Goodbye!').shouldEndSession(true);
+  res.say('<say-as interpret-as="interjection">arrivederci.</say-as>').shouldEndSession(true);
 };
 
 skillService.intent('AMAZON.CancelIntent', {}, cancelIntentFunction);
