@@ -90,7 +90,7 @@ skillService.intent('madlibIntent', {
   'slots': {
     'STEPVALUE': 'STEPVALUES'
   },
-  'utterances': ['{neues|neuer|neue|starte|erzeuge|beginne|baue} {|ein|eine|die|den|das} {|neues|neuen} {Satz|Spiel}',
+  'utterances': ['{neues|neuer|neue|starte|erzeuge|beginne|baue} {|ein|einen|die|den|das} {|neues|neuen} {Satz|Spiel}',
     '{-|STEPVALUE}'
   ]
 },
@@ -101,7 +101,7 @@ skillService.intent('madlibIntent', {
 );
 
 skillService.intent('saveMadlibIntent', {
-  'utterances': ['{speichere|sichere|merke} {|dir|mir} {|ein|eine|die|den|das|mein|meine} {Satz|Spiel}']
+  'utterances': ['{speichere|sichere|merke} {|dir|mir} {|die|den|das|mein|meine} {Satz|Spiel}']
 },
   function(request, response) {
     var userId = request.userId;
