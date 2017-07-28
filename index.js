@@ -44,7 +44,7 @@ var madlibIntentFunction = function(madlibHelper, request, response) {
     } else {
       madlibHelper.retryCount++;
     }
-    if(madlibHelper.retryCount>1) {
+    if(madlibHelper.retryCount>2) {
       response.say('<say-as interpret-as="interjection">ach du meine güte.</say-as> Wie es scheint bin ich gerade sehr schwerhörig, denn ich konnte Dich leider immer noch nicht verstehen. Falls Du noch Lust hast, versuche es bitte von vorne. <say-as interpret-as="interjection">tschö.</say-as>');
       response.shouldEndSession(true);
     } else {
@@ -90,7 +90,7 @@ skillService.intent('madlibIntent', {
   'slots': {
     'STEPVALUE': 'STEPVALUES'
   },
-  'utterances': ['{neues|neuer|neue|starte|erzeuge|beginne|baue} {|ein|einen|die|den|das} {|neues|neuen} {Satz|Spiel}',
+  'utterances': ['{neues|neuer|neue|starte|erzeuge|beginne|baue} {|neues|neuen} {Satz|Spiel}',
     '{-|STEPVALUE}'
   ]
 },

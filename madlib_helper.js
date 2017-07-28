@@ -25,7 +25,7 @@ function MadlibHelper(obj) {
           value: null,
           template_key: "type_of_bird",
           prompt: "eine Vogelart",
-          help: "Sage mir eine Vogelart die ich zum Satz hinzuzufügen soll. Was für einen Vogel möchtest Du haben?",
+          help: "Sage mir eine Vogelart die ich zum Satz hinzufügen soll. Was für einen Vogel möchtest Du haben?",
         },
         {
           value: null,
